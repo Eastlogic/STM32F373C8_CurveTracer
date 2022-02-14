@@ -1,0 +1,12 @@
+--cpu Cortex-M4.fp
+".\objects\startup_stm32f373xc.o"
+".\objects\main.o"
+".\objects\stm32f37x_it.o"
+".\objects\system_stm32f37x.o"
+".\objects\stm32f37x_gpio.o"
+".\objects\stm32f37x_misc.o"
+".\objects\stm32f37x_rcc.o"
+--strict --scatter ".\Objects\STM32F373C8_CurveTracer.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\STM32F373C8_CurveTracer.map" -o .\Objects\STM32F373C8_CurveTracer.axf

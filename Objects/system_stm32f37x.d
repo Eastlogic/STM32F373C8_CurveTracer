@@ -1,0 +1,13 @@
+.\objects\system_stm32f37x.o: ..\STM32F37x_DSP_StdPeriph_Lib_V1.1.0\Libraries\CMSIS\Device\ST\STM32F37x\Source\Templates\system_stm32f37x.c
+.\objects\system_stm32f37x.o: ..\STM32F37x_DSP_StdPeriph_Lib_V1.1.0\Libraries\CMSIS\Device\ST\STM32F37x\Include\stm32f37x.h
+.\objects\system_stm32f37x.o: C:\Keil_v5\ARM\CMSIS\Include\core_cm4.h
+.\objects\system_stm32f37x.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\system_stm32f37x.o: C:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h
+.\objects\system_stm32f37x.o: C:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h
+.\objects\system_stm32f37x.o: C:\Keil_v5\ARM\CMSIS\Include\core_cm4_simd.h
+.\objects\system_stm32f37x.o: ..\STM32F37x_DSP_StdPeriph_Lib_V1.1.0\Libraries\CMSIS\Device\ST\STM32F37x\Include\system_stm32f37x.h
+.\objects\system_stm32f37x.o: .\src\stm32f37x_conf.h
+.\objects\system_stm32f37x.o: ..\STM32F37x_DSP_StdPeriph_Lib_V1.1.0\Libraries\STM32F37x_StdPeriph_Driver\inc\stm32f37x_gpio.h
+.\objects\system_stm32f37x.o: ..\STM32F37x_DSP_StdPeriph_Lib_V1.1.0\Libraries\CMSIS\Device\ST\STM32F37x\Include\stm32f37x.h
+.\objects\system_stm32f37x.o: ..\STM32F37x_DSP_StdPeriph_Lib_V1.1.0\Libraries\STM32F37x_StdPeriph_Driver\inc\stm32f37x_rcc.h
+.\objects\system_stm32f37x.o: ..\STM32F37x_DSP_StdPeriph_Lib_V1.1.0\Libraries\STM32F37x_StdPeriph_Driver\inc\stm32f37x_misc.h
