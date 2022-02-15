@@ -2,6 +2,7 @@
 ".\objects\startup_stm32f373xc.o"
 ".\objects\main.o"
 ".\objects\stm32f37x_it.o"
+".\objects\user.o"
 ".\objects\system_stm32f37x.o"
 ".\objects\stm32f37x_gpio.o"
 ".\objects\stm32f37x_misc.o"

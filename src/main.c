@@ -10,12 +10,13 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f37x.h"
-
+#include "user.h"
 
 
 int main(void)
 {
-
+	RCC_init();
+	GPIO_init();
 
 	while (1)
 	{

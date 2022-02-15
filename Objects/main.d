@@ -11,3 +11,4 @@
 .\objects\main.o: ..\STM32F37x_DSP_StdPeriph_Lib_V1.1.0\Libraries\CMSIS\Device\ST\STM32F37x\Include\stm32f37x.h
 .\objects\main.o: ..\STM32F37x_DSP_StdPeriph_Lib_V1.1.0\Libraries\STM32F37x_StdPeriph_Driver\inc\stm32f37x_rcc.h
 .\objects\main.o: ..\STM32F37x_DSP_StdPeriph_Lib_V1.1.0\Libraries\STM32F37x_StdPeriph_Driver\inc\stm32f37x_misc.h
+.\objects\main.o: src\user.h
