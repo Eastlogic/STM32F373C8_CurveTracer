@@ -45,7 +45,7 @@ void GPIO_init(void);
 
 
 // -- 74HC595 Port Extender Set Out Value --------------------------
-// Function usage like this:		SetShiftRegOut(K1 | K3 | K9);
+// Function usage like this:		ShiftRegSetOut(K1 | K3 | K9);
 // Will set K... and reset other bits to "low"
 
 void ShiftRegSetOut(uint16_t val);
