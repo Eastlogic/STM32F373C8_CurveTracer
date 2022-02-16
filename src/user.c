@@ -1,6 +1,6 @@
 #include "user.h"
 
-// -- System clocks init --------------------------------------
+// -- System clocks init -------------------------------------------
 void RCC_init(void)
 {
 RCC_AHBPeriphClockCmd (RCC_AHBPeriph_GPIOA, ENABLE);
@@ -10,7 +10,7 @@ RCC_AHBPeriphClockCmd (RCC_AHBPeriph_GPIOF, ENABLE);
 }
 
 
-// -- GPIOs init ----------------------------------------------
+// -- GPIOs init ---------------------------------------------------
 void GPIO_init(void)
 {
 GPIO_InitTypeDef GPIO_InitStruct;
@@ -44,14 +44,17 @@ SetShiftRegOut(K_NULL);
 
 
 
+static uint16_t sh_reg;		// Cached shift reg. state
 
 
-
-// -- 74HC595 Port Extender Set Out Value ---------------------
-void SetShiftRegOut(uint16_t val)
+// -- 74HC595 Port Extender Set Out Value --------------------------
+void ShiftRegSetOut(uint16_t val)
 {
 uint8_t j;
 
+	// Save new state of shift register
+	sh_reg = val;	
+	
 	// Shift out data to register
 	for (j=0; j<16; j++)
 	{
@@ -73,5 +76,22 @@ uint8_t j;
 	GPIO_SetBits(LCLK_GPIO, LCLK_GPIO_Pin);
 	GPIO_ResetBits(LCLK_GPIO, LCLK_GPIO_Pin);
 }
-// *************************************************************
+
+
+// -- 74HC595 Set Out Bits (without changing others) ---------------
+void ShiftRegSetBits(uint16_t val)
+{
+//Put on set-mask and got reg. state cached
+ShiftRegSetOut(sh_reg | val);
+}
+
+
+// -- 74HC595 Reset Out Bits (without changing others) -------------
+void ShiftRegResetBits(uint16_t val)
+{
+//Put on reset-mask and got reg. state cached
+ShiftRegSetOut(sh_reg & ~val);
+}
+
+// *****************************************************************
 
