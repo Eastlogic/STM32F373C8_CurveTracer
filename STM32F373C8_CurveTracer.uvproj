@@ -368,7 +368,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F37X, USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\STM32F37x_DSP_StdPeriph_Lib_V1.1.0\Libraries\CMSIS\Device\ST\STM32F37x\Include;..\STM32F37x_DSP_StdPeriph_Lib_V1.1.0\Libraries\CMSIS\Device\ST\STM32F37x\Source\Templates;..\STM32F37x_DSP_StdPeriph_Lib_V1.1.0\Libraries\STM32F37x_StdPeriph_Driver\inc;.\src</IncludePath>
+              <IncludePath>..\STM32F37x_DSP_StdPeriph_Lib_V1.1.0\Libraries\CMSIS\Device\ST\STM32F37x\Include;..\STM32F37x_DSP_StdPeriph_Lib_V1.1.0\Libraries\CMSIS\Device\ST\STM32F37x\Source\Templates;..\STM32F37x_DSP_StdPeriph_Lib_V1.1.0\Libraries\STM32F37x_StdPeriph_Driver\inc;.\src;..\STM32F37x_DSP_StdPeriph_Lib_V1.1.0\Libraries\CMSIS\Include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>

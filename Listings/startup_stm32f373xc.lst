@@ -632,10 +632,9 @@ ARM Macro Assembler    Page 10
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
 erwork --depend=.\objects\startup_stm32f373xc.d -o.\objects\startup_stm32f373xc
-.o -ID:\Archive\Keil\keil_v5\STM32F37x\STM32F373C8_CurveTracer\RTE -IC:\Keil_v5
-\ARM\PACK\Keil\STM32F3xx_DFP\1.4.0\Device\Include -IC:\Keil_v5\ARM\CMSIS\Includ
-e --predefine="__UVISION_VERSION SETA 515" --predefine="STM32F373xC SETA 1" --l
-ist=.\listings\startup_stm32f373xc.lst startup_stm32f373xc.s
+.o -IC:\Keil_v5\ARM\RV31\INC -IC:\Keil_v5\ARM\CMSIS\Include -IC:\Keil_v5\ARM\In
+c\ST\STM32F3xx --predefine="__UVISION_VERSION SETA 515" --list=.\listings\start
+up_stm32f373xc.lst startup_stm32f373xc.s
 
 
 
@@ -1568,4 +1567,4 @@ Symbol: __use_two_region_memory
       None
 Comment: __use_two_region_memory unused
 3 symbols
-430 symbols in table
+429 symbols in table
